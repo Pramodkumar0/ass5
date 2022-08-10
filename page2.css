@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(235, 235, 77)} 
+h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line {
+    display: grid;
+    grid-template-columns: 10px 100px;
+    grid-gap:20px;
+    padding-bottom: 20px;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
+#box1 {
+    animation: pramod 3s ease-in-out;
+}
+@keyframes pramod {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 300px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+#box2 {
+    animation: pramo 3s ease-in-out 3s;
+}
+@keyframes pramo {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    50% {
+        width: 300px;
+        height: 400px;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+#box3 {
+    animation: pramod 2s 6s;
+}
+#box4 {
+    animation: pramod 2s ease-in 7s;
+}
+#box5 {
+    animation: pramod 2s  8s;
+}
+#box6 {
+    animation: pramod 2s ease-out 13s;
+}
+#box7 {
+    animation: pramod 2s  15s;
+}
